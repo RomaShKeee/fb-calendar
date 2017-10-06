@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= match_name(@event) %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  Match in league <%= @event.league.name %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @event.started_at %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @event.started_at + 90.minutes %>
+</p>
+
+<%= link_to 'Back', events_path %>
