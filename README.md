@@ -2,5 +2,6 @@
 
 Setup Football Api
 * npm install -g json-server
-* json-server --watch db.json
-* visit http://localhost:3000/events
+* bundle i
+* rails db:create db:migrate
+* foreman start
